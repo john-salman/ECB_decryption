@@ -1,32 +1,13 @@
-First 32 char block of encrypted file is on line 696
-Second block is on line 1747
-third block is on lines: 310, 420, 955, 1246, 1573, 1634, 1883
+Our Cipher Text:
+e220eb994c8fc16388dbd60a969d4953f042fc0bce25dbef573cf522636a1ba3fafa1a7c21ff824a5824c5dc4a376e75
 
-Most repeated plaintext words: frosk, wah, urling, spahis, socked, sitch
-
-frosk appears on lines 351, 837, 1483, and 1654
-
-No idea if any of this is important...
-
-On line 696, we have a repeat of e220eb99 which is the first 4 plaintext characters
-in cipher text that matches our cipher text.
-
-So I think we can conclude that line 696 uses the same key as our ciphertext
-Because the first blocks are identical and with ECB they should always be
-identical.
-
-
-Interestingly, we can almost make out what the passcode is...I'm not sure whats missing...
-
-
+First Block (we're assuming that block size is 32 ciphertext chars...)
 FLAG{looks_like_gospel_feebly_}:e220eb994c8fc16388dbd60a969d49536d896bd7d6da9c4ce3eac5e4832c2f64
+
+Second Block:
 FLAG{verism_evg_you_can_break_aejug_}:528c30c67c57968fa131684d07c1fa9cf042fc0bce25dbef573cf522636a1ba3c0bd6ceeec8e817f1be7b09a9a8b0fb8
 
-"FLAG{looks_like_you_can_break_
-
-
-Maybe out of these?:
-
+Third Block:
 FLAG{yabbi_palaka_eared_baned_bonito_debell_bares}:877fd5bd951674430e45cb2d026c6e05bf48b8432ab8a59dddbcea8a68a97704a9dd28e433e33717be2e7952841e2485fafa1a7c21ff824a5824c5dc4a376e75
 
 FLAG{repent_mundil_sawway_pomps_gph_spency_ozones}:ba24b332e84e64600de82ecbc6f0cec7bcf00b16c8623f576968078adcaef884d8794ca0dc03eaefc35cd6757486f3a8fafa1a7c21ff824a5824c5dc4a376e75
